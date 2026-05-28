@@ -1,0 +1,153 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     /* Biar hitungan padding tidak merusak lebar kotak */
+ }
+
+ body {
+     font-family: sans-serif;
+     background-color: #f6f8fb;
+     /* Warna latar belakang soft */
+ }
+
+ /* Bagian Header / Judul Aplikasi */
+ header {
+     background-color: #6495ed;
+     /* Warna biru cornflower seperti di contoh */
+     color: white;
+     padding: 20px;
+     text-align: center;
+     /* Langsung membuat teks h1 ke tengah */
+     margin-bottom: 30px;
+ }
+
+ main {
+     max-width: 600px;
+     /* Membatasi lebar kotak agar tidak melebar semelebar layar */
+     margin: 0 auto;
+     /* KUNCI UTAMA: atas-bawah 0, kiri-kanan otomatis imbang (tengah) */
+     padding: 0 20px;
+     /* Jarak aman kanan-kiri jika dibuka di HP yang layarnya kecil */
+ }
+
+ section {
+     background-color: white;
+     border: 2px solid #b0c4de;
+     /* Garis tepi biru muda tipis */
+     border-radius: 8px;
+     /* Membuat sudut kotak melengkung halus */
+     padding: 20px;
+     margin-bottom: 20px;
+     /* Jarak antar kotak form dan rak */
+ }
+
+ /* Merapikan Judul di dalam setiap Section */
+ section h2 {
+     color: #4682b4;
+     /* Warna teks biru */
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ form div {
+     margin-bottom: 15px;
+     /* Jarak antar baris input */
+ }
+
+ form label {
+     display: block;
+     /* Membuat label berada di atas input */
+     margin-bottom: 5px;
+     color: #4682b4;
+     font-weight: bold;
+ }
+
+ form input[type="text"],
+ form input[type="number"] {
+     width: 100%;
+     /* Input otomatis memenuhi lebar kotak */
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+
+ /* Khusus checkbox selesai dibaca agar sejajar dengan labelnya */
+ form div input[type="checkbox"] {
+     margin-left: 10px;
+ }
+
+ /* Tombol Submit */
+ button[type="submit"] {
+     width: 100%;
+     background-color: #6495ed;
+     color: white;
+     border: none;
+     padding: 12px;
+     border-radius: 5px;
+     font-size: 16px;
+     cursor: pointer;
+     font-weight: bold;
+ }
+
+ button[type="submit"]:hover {
+     background-color: #4169e1;
+     /* Efek sedikit menggelap saat kursor di atas tombol */
+ }
+
+ /* Style dasar untuk semua tombol di dalam item buku */
+ [data-testid="bookItem"] button {
+     padding: 8px 12px;
+     margin-right: 8px;
+     border: none;
+     border-radius: 6px;
+     color: white;
+     font-weight: bold;
+     cursor: pointer;
+     font-size: 14px;
+ }
+
+ /* Class khusus warna hijau untuk tombol status selesai/belum selesai */
+ .btn-success {
+     background-color: #2e7d32;
+     /* Hijau tua yang nyaman di mata */
+ }
+
+ .btn-success:hover {
+     background-color: #1b5e20;
+ }
+
+ /* Class khusus warna merah untuk tombol hapus */
+ .btn-danger {
+     background-color: #c62828;
+     /* Merah gelap */
+ }
+
+ .btn-danger:hover {
+     background-color: #b71c1c;
+ }
+
+ /* Tambahan: Kotak pembungkus buku biar ada jarak dan garis tipis rapi */
+ [data-testid="bookItem"] {
+     border: 1px solid #e0e0e0;
+     padding: 15px;
+     border-radius: 8px;
+     margin-bottom: 15px;
+     background-color: #ffffff;
+ }
+
+ [data-testid="bookItem"] h3 {
+     margin-bottom: 5px;
+     color: #333;
+ }
+
+ [data-testid="bookItem"] p {
+     margin-bottom: 5px;
+     color: #666;
+     font-size: 14px;
+ }
+
+ [data-testid="bookItem"] div {
+     margin-top: 10px;
+ }
